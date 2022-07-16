@@ -22,7 +22,21 @@ In conclusion, the objective of this final degree project was to verify that tha
 - In the Financial Risk Tolerance folder are the different files to preprocess the Financial survey dataset and execute the different clustering algorithms. These are the clustering algorithms that have been tested, and that have been tried to be optimized by the most recent literature: K-Means, DBSCAN, OPTICS, BIRCH, Gaussian Mixtures, Agglomerative Clustering and Spectral Clustering.
 - In the RL folder are all the files for the creation of the environment and for the training of the RLlib agents.
 - In the Skarb folder there is a Streamlit webapp to interact with the trained models
+- In the eff folder there are the different financial surveys for the clustering step.
 
+## Results
+This research project has shown that it is possible to automate risk profiling and asset allocation processes through the use of machine learning from start to finish. It has begun by finding and polishing relevant data to be able to segment the population into different risk profiles. To achieve this, numerous clustering algorithms have been used, as well as different metrics for cluster validation and techniques to tune the hyperparameters of each algorithm. Finally, the spectral clustering method has turned out to be the most effective for the data with which we worked. Once the clusters have been obtained, a further step has been added to personalize the process using the z-scores. Subsequently, different Reinforcement Learning agents have been trained in an environment specifically created to train agents who not only prioritize the return on investment, but also take into account the tolerance and risk capacity of each individual. The results of the agents have then been compared with a reference benchmark such as the Dow Jones 30 and it has been shown that the Proximal Policy Optimization (PPO) algorithm performs much better when it comes to protecting the user against risk taking into account the user's risk profile and without having to sacrifice returns. Finally, a small but practical application has been created so that these models can be accessible to the public.
+
+### Clustering
+Result of Spectral Clustering visualized with t-SNE.
+
+![image](https://user-images.githubusercontent.com/92672883/179366789-5a87fa4a-c7c2-4016-a9cd-23240bd66629.png)
+
+### Trading strategy results depending on tolerance to financial turbulence
+![image](https://user-images.githubusercontent.com/92672883/179366823-bf56e782-22c2-4645-ab0c-cc837a0374e0.png)
+![image](https://user-images.githubusercontent.com/92672883/179366828-63b1d455-d151-4f77-9e7e-8c14a04507df.png)
+
+### Skarb webapp built with Streamlit
 
 
 
