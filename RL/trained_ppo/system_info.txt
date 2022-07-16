@@ -1,0 +1,7 @@
+OS: macOS-10.16-x86_64-i386-64bit Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_X86_64
+Python: 3.9.7
+Stable-Baselines3: 1.5.0
+PyTorch: 1.11.0
+GPU Enabled: False
+Numpy: 1.22.4
+Gym: 0.21.0
